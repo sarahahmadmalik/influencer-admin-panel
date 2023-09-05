@@ -47,8 +47,11 @@
   border-radius: 0px !important;
 }
 
-.ant-table-thead tr th::before {
-  background-color: transparent !important;
+.ant-table-thead{
+  background-color: #EDF8FF !important;
+  border-radius: 13px !important;
+  border: transparent !important;
+  overflow: hidden;
 }
 
 

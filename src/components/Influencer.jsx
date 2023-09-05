@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function Influencer({ data}) {
   return (
-    <div className="flex flex-col space-y-4 mb-4 rounded-md py-5 px-5 fontMonst">
+    <div className="flex flex-col w-full space-y-4 mb-4 rounded-md py-5 px-5 fontMonst">
     <div>
     <div className="flex items-center">
       <div className="relative flex-shrink-0 w-20 h-20 rounded-full overflow-hidden">
@@ -12,7 +12,7 @@ function Influencer({ data}) {
       <div className="ml-2">
         <h2 className="text-[18px] font-[700]">{data.name}</h2>
         <p className="text-[14px]">@{data.username}</p>
-        <p className="text-[12px] my-2 flex items-center  ">Bio:{" "}<p className="font-[400] text-[14px] pl-1"></p>{data.bio}</p>
+        <p className="font-[400] text-[14px] pl-1">{data.bio}</p>
       </div>
       </div>
       <div className="flex items-center space-x-4 my-3">

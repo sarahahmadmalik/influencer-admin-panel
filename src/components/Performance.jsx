@@ -14,7 +14,7 @@ function Performance() {
   };
 
   return (
-    <div className="fontMonst py-4">
+    <div className="fontMonst py-4 w-full">
       <h1 className="font-[700] text-[18px] fontMonst">Performance</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
         {/* First Grid Item */}
