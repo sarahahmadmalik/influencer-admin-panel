@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.shadow-form {
+  box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.12);
+}
+
+.fontMonst{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+.selected-row {
+  background-color: #f9f6ff !important;
+}
+
+
+.topRow{
+  margin: 0 !important;
+  padding: 0 0 0 10px !important;
+
+}
+
+
+
+.ant-menu-item:not(:first-child) {
+  margin-top: 0.5rem !important;
+}
+
+.ant-menu-item.ant-menu-item-selected {
+  background: linear-gradient(270.75deg, #FF5B84 -51.86%, #4254FF 107.54%) !important;
+  color: white;
+}
+
+.ant-layout-sider-trigger {
+  background-color: #DFE2F5 !important;
+
+}
+
+.ant-table th {
+  background-color: transparent !important;
+  border-top: 1px solid #DCD8D8 !important; 
+  border-bottom: 1px solid #DCD8D8 !important; 
+  border-radius: 0px !important;
+}
+
+.ant-table-thead tr th::before {
+  background-color: transparent !important;
+}
+
+
+
+.sidebar {
+  overflow-y: auto;
+  max-height: 80vh !important;
+  background:  #FFFFFF !important;
+  color: black;
+  padding: 0 10px 0 10px;
+  font-weight: 400;
+  /* padding-bottom: 1rem !important; */
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+
+
+
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar:hover::-webkit-scrollbar {
+  /* overflow: scroll; */
+  display: block;
+  width: 6px;
+}
+
+.ant-input {
+  background: transparent !important;
+}
+
+.ant-menu-title-content:hover{
+color:white;
+}
+
+.search{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.ant-form-item-required{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.ant-input{
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+@media (max-width: 640px) {
+  .hide-on-sm {
+    display: none;
+  }
+}
+
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.font-col{
+  color: #AF1FFC !important;
+}
+
+.shadowDiv{
+  box-shadow: 0px 4px 25px 0px #00000012;
+}
+
+
+.dropdown{
+  border: 0px !important;
+}
+
+html,body{
+  background-color: #F6F2FE !important;
+}
+
