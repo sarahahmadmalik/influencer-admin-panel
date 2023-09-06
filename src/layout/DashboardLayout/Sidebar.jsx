@@ -36,7 +36,7 @@ const Sidebar = ({ role }) => {
   return (
     <Sider
       style={{ paddingTop: "1rem", background: "white" }}
-      className="block "
+      className="block hide-sidebar-md "
       width={240}
     >
       <div className="flex items-center justify-center">

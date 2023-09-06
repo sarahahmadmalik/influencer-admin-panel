@@ -111,9 +111,9 @@ const navItemMenu = (
           style={{ paddingTop: 20, paddingBottom: 20, height: "4rem", borderColor: "#D9E9FF", background: "white"}}
         >
   
-  <div className="flex w-full sm:w-auto sm:px-4 items-center justify-start  ">
+  <div className="flex  w-auto sm:px-4 items-center justify-start  ">
     <div className="">
-            <h1 className="font-[700] sm:text-[24px] text-[20px] fontMonst" style={{fontWeight: "700"}}> { getPageTitle(router.pathname)}</h1>
+            <h1 className="font-[700] sm:text-[24px] text-[20px] fontMonst" style={{fontWeight: "700 !important", fontSize: "24px !important"}}> { getPageTitle(router.pathname)}</h1>
           </div>
         
         </div>
@@ -123,9 +123,9 @@ const navItemMenu = (
 
 <div className="flex items-center border">
 
-          <div className="  mr-3">
-          <p className="font-[600] text-[18px] ">John Doe</p>
-          <p className="font-[400] text-[13px] text-[#0000006B]">Influencer</p>
+          <div className="w-full flex flex-col   mr-3">
+          <p className="font-[600] text-[18px] border " style={{padding: "0 !important", margin: 0}}>John Doe</p>
+          <p className="font-[400] text-[13px]  text-[#0000006B]">Influencer</p>
           </div>
 
          
@@ -140,17 +140,18 @@ const navItemMenu = (
               />
             </Dropdown>
           </div>
-          <div className="hidden   justify-between bg-[#FFFFFF] ">
+
+       
     
-    {/* <div className=" hidden  h-full px-2 ">
+    <div className=" hidden hide-menu-md   h-full px-2 ">
       <Dropdown overlay={navItemMenu} trigger={["click"]} style={{border: "none !important", padding: "0 !important"}}  >
         <a className="text-[#0852C1]">
           <MenuOutlined style={{ fontSize: "24px" }} />
         </a>
       </Dropdown>
-    </div> */}
+    </div>
 
-  </div>
+
           </div>
         </Header>
       

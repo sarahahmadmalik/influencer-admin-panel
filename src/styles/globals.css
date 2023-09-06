@@ -45,11 +45,36 @@
   border-radius: 0px !important;
 }
 
-.ant-table-thead tr{
+.index-table .ant-table-thead tr{
   background-color: #EDF8FF !important;
   border-radius: 13px !important;
   border: transparent !important;
   overflow: hidden;
+}
+
+.table-color{
+font-weight: 700 !important;
+color: #737074 !important;
+}
+
+
+.ant-table-thead tr th::before {
+  background-color: transparent !important;
+}
+
+.odd-row:hover {
+  background: #834CA0; 
+}
+
+.compaign .ant-table-thead {
+  background-color: transparent !important;
+  border-radius: 13px !important;
+  border: none !important;
+  overflow: hidden;
+}
+
+.compaign .ant-table-row  td{
+  padding: 8px 2px 8px 2px  !important;
 }
 
 
@@ -104,12 +129,17 @@ color:white;
 }
 
 
-@media (max-width: 640px) {
-  .hide-on-sm {
+@media (max-width: 768px) {
+  .hide-sidebar-md {
     display: none;
   }
 }
 
+@media (min-width: 768px) {
+  .hide-menu-md {
+    display: none;
+  }
+}
 
 .table-responsive {
   overflow-x: auto;

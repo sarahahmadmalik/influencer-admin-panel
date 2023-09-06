@@ -147,7 +147,7 @@ function Index() {
       <div className='px-5 py-6'>
         <h1 className="font-[700] text-[24px] fontMonst py-3">Influencer Campaign</h1>
         <div>
-        <div className=''>
+        <div className='index-table'>
           <Table
             dataSource={compaign}
             columns={columns}
