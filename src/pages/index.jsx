@@ -70,7 +70,7 @@ function Index() {
     },
   ]
   const renderSocialPlatforms = (platforms) => (
-    <div>
+    <div className="flex space-x-2 justify-center">
       {platforms.map((icon, index) => (
         <Image key={index} src={icon} width={20} preview={false} style={{ marginRight: 8 }} />
       ))}
@@ -79,43 +79,67 @@ function Index() {
   
   const columns = [
     {
-      title: 'Campaign Name',
+      title: (
+        <span >Campaign Name</span>
+      ),
       dataIndex: 'name',
       className: 'fontMonst',
+      render: (text) => <span style={{ fontWeight: 600, textAlign: 'center' }}>{text}</span>,
     },
     {
-      title: 'Social Platforms',
+      title: (
+        <span className="flex justify-center">Social Platforms</span>
+      ),
       dataIndex: 'socialPlatforms',
       className: 'fontMonst',
       render: renderSocialPlatforms,
     },
     {
-      title: 'Views',
+      title: (
+        <span className="flex justify-center">Views</span>
+      ),
       dataIndex: 'views',
       className: 'fontMonst',
+      render: (text) => <span className="flex justify-center" style={{ fontWeight: 600, textAlign: 'center' }}>{text}</span>,
     },
     {
-      title: 'Success Rate',
+      title: (
+        <span className="flex justify-center">Success Rate</span>
+      ),
       dataIndex: 'successRate',
       className: 'fontMonst',
+      render: (text) => (
+        <span className="flex justify-center" style={{ fontWeight: 600, color: '#4254FF', textAlign: 'center' }}>
+          {text}%
+        </span>
+      ),
     },
     {
-      title: 'Start Date',
+      title: (
+        <span className="flex justify-center">Start Date</span>
+      ),
       dataIndex: 'startDate',
       className: 'fontMonst',
+      render: (text) => <span className="flex justify-center" style={{ fontWeight: 600, textAlign: 'center' }}>{text}</span>,
     },
   ];
+
+  const tableStyle = {
+    border: 'none',
+    borderRadius: '16px', 
+    overflowX: 'auto'
+  };
   return (
     <div className="h-full">
        <Head>
         <title>Create Discovery</title>
       </Head>
       <div className="bg-white h-full my-4 mx-2 rounded-md ">
-      <div className="px-3 w-full  flex">
+      <div className="px-3 w-full flex-col flex lg:flex-row">
         <Influencer data={data}/>
         <Performance/>
       </div>
-      <div className=" px-4 my-4 justify-evenly  flex">
+      <div className=" px-4 my-4 justify-evenly flex flex-col md:flex-row ">
         <GenderPieChart/>
         <AgeGraph/>
         <AudienceHistory/>
@@ -128,7 +152,7 @@ function Index() {
             dataSource={compaign}
             columns={columns}
             pagination={false}
-           
+            style={tableStyle}
             className="fontMonst"
           />
         </div>
