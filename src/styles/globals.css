@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,6 +8,10 @@
 
 .shadow-form {
   box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.12);
+}
+
+.fontRob{
+  font-family: 'Roboto', sans-serif;
 }
 
 .fontMonst{
@@ -23,6 +29,70 @@
   padding: 0 0 0 10px !important;
 
 }
+
+.featured-collection-card {
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.featured-collection-card:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.bookmark-button {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.bookmark-button.active {
+  background-color: linear-gradient(270.75deg, #FF5B84 -51.86%, #4254FF 107.54%);
+}
+
+/* Add this to your CSS file (FeaturedCollection.css) */
+.added-to-bookmarks-message {
+  position: fixed;
+  top: 6%;
+  left: 50%;
+  z-index: 999;
+  transform: translateX(-50%);
+  background-color: #4254FF;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  animation: fadeIn 0.5s ease-in-out, fadeOut 2s forwards 1s;
+}
+
+
+.gradient-bg {
+  background: linear-gradient(270.75deg, #FF5B84 -51.86%, #4254FF 107.54%);
+  color: white;   
+}
+
+.social .ant-select-selector {
+  background: #AF1FFC08 !important; 
+  border: 1px solid #E9E9E9 !important; 
+  border-radius: 4px;
+}
+
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 
 
@@ -125,7 +195,7 @@ color:white;
 }
 
 .ant-input{
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 
@@ -157,8 +227,15 @@ color:white;
 .dropdown{
   border: 0px !important;
 }
-
-html,body{
-  background-color: #F6F2FE !important;
+body{
+  background: #FAF9FD !important;
 }
+
+.filter  .ant-select-selector {
+  font-family: 'Roboto', sans-serif !important;
+  padding: 20px 7px 20px 7px !important;
+
+}
+
+  
 

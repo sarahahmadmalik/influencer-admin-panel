@@ -65,6 +65,10 @@ const Index = ({ children }) => {
 
   
   const getPageTitle = (path) => {
+    console.log(path)
+    if (path === "/Home/[id]") {
+      return "Influencer"; 
+    }
     let route = routes.find((r) => r.path === path);
     if (! route) {
         if (path === "/") {
